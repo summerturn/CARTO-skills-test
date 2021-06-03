@@ -40,11 +40,11 @@ I'm going through your materials, I've seen this query somewhere, and I'd need s
 
 ### Solution
 
-This SQL query pulls the name (country name in this case), a count of all the rows in the european_countries table and names the resulting column "counts", and the sum of population numbers in the populated_places table and names the resulting column "population."
+This SQL query pulls the name (country name in this case), a count of the rows thats were joined and names the resulting column "counts" (this is essentially counting all of the populated places in each country), and the sum of population numbers in the populated_places table and names the resulting column "population."
 
 The base table is european_countries which is providing the "name" and "counts" columns.
 
-The join table is populated_places which is providing the population data which is summed.
+The join table is populated_places which is providing the population data which is summed after the join.
 
 These two tables are join by a match in a column called "the_geom" in the european_countries table and another column called "the_geom" in the populated_places table.
 
